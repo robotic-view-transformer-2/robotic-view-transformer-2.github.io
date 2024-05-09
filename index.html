@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ6CLW4YR2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SJ6CLW4YR2');
+</script>
+
+  <meta charset="utf-8">
+  <meta name="description"
+        content="RVT-2: Learning Precise Manipulation from Few Examples">
+  <meta name="keywords" content="RVT-2, Robotics, Transformer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RVT-2: Learning Precise Manipulation from Few Examples</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">RVT-2: Learning Precise Manipulation from Few Examples</h1>
+	  <h1 class="is-size-1 publication-authors">RSS 2024 submission</h1>
+	</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Real-World Experiment</h2>
+	<video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+            <source src="./real_world/teaser.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+        </video>
+      </div>
+    </div>
+   </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!--/ Paper video. -->
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Summary</h2>
+	<p>
+	    <figure>
+	    <a href="./figs/method.png"><img src="./figs/method.png"></a>
+	    </figure>
+        </p>
+        <div class="content has-text-justified">
+         <p> </p>
+          <p>
+	  In this work, we study how to build a robotic system that can solve multiple 3D manipulation tasks given task instructions. To be useful in various domains like manufacturing and home, such a system capable of solving tasks that require high precision and learn a new tasks with few demonstrations.
+         </p>
+         <p>
+	 Prior works like RVT and PerAct have studied this problem, however, they often struggle with tasks requiring high precision. We build upon prior works to make them more performant, precise and fast. We propose RVT-2, which is 6X faster in training and 2X faster in inference than its predecessor RVT. RVT-2 achieves a new state-of-the-art on multi-task RLBench benchmark, improving the success rate from 65% to 78%. RVT-2 is also effective in the real world, where it can learn tasks requiring high precision like inserting peg from just 10 demonstations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+</body>
+</html>
