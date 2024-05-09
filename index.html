@@ -38,15 +38,110 @@
 </head>
 <body>
 
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://imankgoyal.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://imankgoyal.github.io/ifor.html">
+		  IFOR
+          </a>
+          <a class="navbar-item" href="https://github.com/princeton-vl/SimpleView">
+		  SimpleView
+          </a>
+          <a class="navbar-item" href="https://github.com/imankgoyal/NonDeepNetworks">
+		  Non-Deep Networks
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">RVT-2: Learning Precise Manipulation from Few Examples</h1>
-	  <h1 class="is-size-1 publication-authors">RSS 2024 submission</h1>
-	</div>
+          <h1 class="title is-1 publication-title">RVT-2: Learning Precise Manipulation from Few Examples</h1>>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+	      <a href="https://imankgoyal.github.io/">Ankit Goyal</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.cornell.edu/~valts/">Valts Blukis</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+	    <span class="author-block">
+	      <a href="https://people.csail.mit.edu/jiex">Jie Xu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+	      <a href="https://www.guoyijie.me/">Yijie Guo</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+	      <a href="https://research.nvidia.com/person/yu-wei-chao">Yu-Wei Chao</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+	      <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+		<br>
+		<a href="https://www.nvidia.com/en-us/"><img src="./figs/nvidia.png" width="300px"></a>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://paper_tbd.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/arxiv_tbd"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/nvlabs/rvt"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -92,6 +187,43 @@
     <!--/ Abstract. -->
   </div>
 </section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{goyal2023rvt,
+  author    = {Goyal, Ankit and Blukis, Valts and Xu, Jie and Guo, Yijie and Chao, Yu-Wei and Fox, Dieter},
+  title     = {RVT2: Learning Precise Manipulation from Few Demonstrations},
+  journal   = {arXiv:tbd},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/arxiv_tbd">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/nvlabs/rvt" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Based on the awesome open source template <a
+              href="https://github.com/nerfies/nerfies.github.io">from here.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
