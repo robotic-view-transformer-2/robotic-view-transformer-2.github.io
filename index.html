@@ -107,10 +107,12 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
             </span>
           </div>
 
+
           <div class="is-size-5 publication-authors">
 		<br>
 		<a href="https://www.nvidia.com/en-us/"><img src="./figs/nvidia.png" width="300px"></a>
           </div>
+
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -145,6 +147,9 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
               </span>
             </div>
           </div>
+          <div class="is-size-5 publication-authors">
+		<font color="#76B900" size=5><b>Accepted to RSS 2024</b></font>
+          </div>
         </div>
       </div>
     </div>
@@ -168,11 +173,10 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 	  <br>
         <figure>
           <a href="./figs/plot.png">
-            <img id="plot" src="./figs/plot.png" width="500px"
-              onmouseover="document.getElementById('plot').src='./figs/plot.png'"/>
+            <img id="plot" src="./figs/plot.png" width="500px"/>
           </a>
         </figure>
-      <p> RVT-2 trains significantly faster and achieves higher performance than prior state-of-the-art RVT and PerAct. Because of the efficiency gains, with the same compute, RVT-2 trains 6X faster than RVT, while improving performance by 15% in absolute or 23% in relative terms. While comparing with PerAct, RVT-2 improves the relative performance by 57%. </p>
+      <p> RVT-2 trains significantly faster and achieves higher performance than prior SOTA, RVT and PerAct. Because of the efficiency gains, with the same compute, RVT-2 trains 6X faster than RVT, while improving performance by 19 percentage points. When compared with PerAct, RVT-2 improves the relative performance by 67%. </p>
         </div>
       </div>
 <!--     <div class="hero-body"> -->
@@ -209,7 +213,7 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 	  In this work, we study how to build a robotic system that can solve multiple 3D manipulation tasks given task instructions. To be useful in various domains like manufacturing and home, such a system capable of solving tasks that require high precision and learn a new tasks with few demonstrations.
          </p>
          <p>
-	 Prior works like RVT and PerAct have studied this problem, however, they often struggle with tasks requiring high precision. We build upon prior works to make them more performant, precise and fast. We propose RVT-2, which is 6X faster in training and 2X faster in inference than its predecessor RVT. RVT-2 achieves a new state-of-the-art on multi-task RLBench benchmark, improving the success rate from 65% to 78%. RVT-2 is also effective in the real world, where it can learn tasks requiring high precision like inserting peg from just 10 demonstations.
+	 Prior works like RVT and PerAct have studied this problem, however, they often struggle with tasks requiring high precision. We build upon prior works to make them more performant, precise and fast. We propose RVT-2, which is 6X faster in training and 2X faster in inference than its predecessor RVT. RVT-2 achieves a new state-of-the-art on multi-task RLBench benchmark, improving the success rate from 65% to 82%. RVT-2 is also effective in the real world, where it can learn tasks requiring high precision like inserting peg from just 10 demonstations.
           </p>
         </div>
       </div>
@@ -222,12 +226,10 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3">Experiment Results</h2>
+    <h2 class="title is-3">Experiment</h2>
     </div>
-    <p>We trained a single RVT model from real world data. The single trained RVT model is used to evaluate the performance on all tasks.</p>
+    <p>A single RVT-2 model can peform the following tasks in the real world.</p>
     <br>
-    <h2 class="title is-4">Real World Videos</h2>
-
 
 <h2 class="title is-5">Pick and insert plug</h2>
 <div class="columns is-centered">
@@ -585,7 +587,31 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 </div>
 
 
+<h2 class="title is-4">Generalization Case Study</h2>
+<center>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" width=700 onloadstart="this.playbackRate=2">
+        <source src="real_world/generalization.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+     <p> RVT-2 tested on various unseen scenerios on the stack blocks tasks.  </p>
+    </div>
   </div>
+</center>
+
+<h2 class="title is-4">Failure Recovery Case Study</h2>
+<center>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" width=700 onloadstart="this.playbackRate=2">
+        <source src="real_world/recovery.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+     <p> RVT-2 demonstrates ability to recover from failures. </p>
+    </div>
+  </div>
+</center>
+
+</div>
 </section>
 
 
