@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ6CLW4YR2"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KH86641P7W"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-SJ6CLW4YR2');
+  gtag('config', 'G-KH86641P7W');
 </script>
 
-  <meta charset="utf-8">
-  <meta name="description"
-        content="RVT-2: Learning Precise Manipulation from Few Examples">
-  <meta name="keywords" content="RVT-2, Robotics, Transformer">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RVT-2: Learning Precise Manipulation from Few Examples</title>
+<meta charset="utf-8">
+<meta name="description"
+content="RVT-2: Learning Precise Manipulation from Few Examples">
+<meta name="keywords" content="RVT-2, Robotics, Transformer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RVT-2: Learning Precise Manipulation from Few Examples</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.png">
+<link rel="stylesheet" href="./static/css/bulma.min.css">
+<link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+<link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+<link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="./static/css/index.css">
+<link rel="icon" href="./static/images/favicon.png">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="./static/js/fontawesome.all.min.js"></script>
+<script src="./static/js/bulma-carousel.min.js"></script>
+<script src="./static/js/bulma-slider.min.js"></script>
+<script src="./static/js/index.js"></script>
 </head>
 <body>
 
@@ -59,6 +60,9 @@
           More Research
         </a>
         <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://robotic-view-transformer.github.io/">
+		  RVT
+          </a>
           <a class="navbar-item" href="https://imankgoyal.github.io/ifor.html">
 		  IFOR
           </a>
@@ -223,51 +227,187 @@
     <p>We trained a single RVT model from real world data. The single trained RVT model is used to evaluate the performance on all tasks.</p>
     <br>
     <h2 class="title is-4">Real World Videos</h2>
-    <h2 class="title is-5">Put Object in Drawer</h2>
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-            <source src="real_world/drawer_success_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-          </video>
-          <p>
-          <font color="#76B900"><b>Success</b></font>: Put green marker in drawer
-          </p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-            <source src="real_world/drawer_success_2.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-          </video>
-          <p>
-    <font color="#76B900"><b>Success</b></font>: Put green marker in drawer
-          </p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-            <source src="real_world/drawer_success_3.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-          </video>
-          <p>
-    <font color="#76B900"><b>Success</b></font>: Put green marker in drawer
-          </p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-            <source src="real_world/drawer_failure_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-          </video>
-          <p>
-          <font color="#FF4500"><b>Failure</b></font>: Put blue marker in drawer
-          </p>
-        </div>
-      </div>
-    </div>
 
-<h2 class="title is-5">Put Object in Shelf</h2>
+
+<h2 class="title is-5">Pick and insert plug</h2>
+<div class="columns is-centered">
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/plug_success_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+        <font color="#76B900"><b>Success</b></font>: Pick and insert plug
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/plug_success_2.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+        <font color="#76B900"><b>Success</b></font>: Pick and insert plug
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/plug_success_3.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+      <font color="#76B900"><b>Success</b></font>: Pick and insert plug
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/plug_failure_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+      <font color="#FF4500"><b>Failure</b></font>: Pick and insert plug
+      </p>
+    </div>
+  </div>
+</div>
+
+<h2 class="title is-5">Pick and insert 8mm peg</h2>
+<div class="columns is-centered">
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/peg_8_success_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+        <font color="#76B900"><b>Success</b></font>: Pick and insert 8mm peg
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/peg_8_success_2.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+        <font color="#76B900"><b>Success</b></font>: Pick and insert 8mm peg
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/peg_8_success_3.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+      <font color="#76B900"><b>Success</b></font>: Pick and insert 8mm peg
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/peg_8_failure_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+      <font color="#FF4500"><b>Failure</b></font>: Pick and insert 8mm peg
+      </p>
+    </div>
+  </div>
+</div>
+
+<h2 class="title is-5">Pick and insert 16mm peg</h2>
+<div class="columns is-centered">
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/peg_success_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+        <font color="#76B900"><b>Success</b></font>: Pick and insert 16mm peg
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/peg_success_2.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+        <font color="#76B900"><b>Success</b></font>: Pick and insert 16mm peg
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/peg_success_3.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+      <font color="#76B900"><b>Success</b></font>: Pick and insert 16mm peg
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+        <source src="real_world/peg_failure_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+      </video>
+      <p>
+      <font color="#FF4500"><b>Failure</b></font>: Pick and insert 16mm peg
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<h2 class="title is-5">Put object in drawer</h2>
+<div class="columns is-centered">
+<div class="column">
+<div class="content">
+<video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+<source src="real_world/drawer_success_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+</video>
+<p>
+<font color="#76B900"><b>Success</b></font>: Put green marker in drawer
+</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+<source src="real_world/drawer_success_2.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+</video>
+<p>
+<font color="#76B900"><b>Success</b></font>: Put green marker in drawer
+</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+<source src="real_world/drawer_success_3.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+</video>
+<p>
+<font color="#76B900"><b>Success</b></font>: Put green marker in drawer
+</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+<source src="real_world/drawer_failure_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+</video>
+<p>
+<font color="#FF4500"><b>Failure</b></font>: Put blue marker in drawer
+</p>
+</div>
+</div>
+</div>
+
+
+<h2 class="title is-5">Put object in shelf</h2>
 <div class="columns is-centered">
   <div class="column">
     <div class="content">
@@ -311,7 +451,7 @@
   </div>
 </div>
 
-<h2 class="title is-5">Put Marker in Bowl/Mug</h2>
+<h2 class="title is-5">Put marker in bowl/mug</h2>
 <div class="columns is-centered">
   <div class="column">
     <div class="content">
@@ -444,94 +584,6 @@
   </div>
 </div>
 
-<h2 class="title is-5">Insert peg</h2>
-<div class="columns is-centered">
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-        <source src="real_world/peg_success_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-      </video>
-      <p>
-        <font color="#76B900"><b>Success</b></font>: Insert peg
-      </p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-        <source src="real_world/peg_success_2.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-      </video>
-      <p>
-        <font color="#76B900"><b>Success</b></font>: Insert peg
-      </p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-        <source src="real_world/peg_success_3.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-      </video>
-      <p>
-      <font color="#76B900"><b>Success</b></font>: Insert peg
-      </p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-        <source src="real_world/peg_failure_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-      </video>
-      <p>
-      <font color="#FF4500"><b>Failure</b></font>: Insert peg
-      </p>
-    </div>
-  </div>
-</div>
-
-
-<h2 class="title is-5">Insert plug</h2>
-<div class="columns is-centered">
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-        <source src="real_world/plug_success_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-      </video>
-      <p>
-        <font color="#76B900"><b>Success</b></font>: Insert plug
-      </p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-        <source src="real_world/plug_success_2.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-      </video>
-      <p>
-        <font color="#76B900"><b>Success</b></font>: Insert plug
-      </p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-        <source src="real_world/plug_success_3.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-      </video>
-      <p>
-      <font color="#76B900"><b>Success</b></font>: Insert plug
-      </p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
-        <source src="real_world/plug_failure_1.mp4" type="video/mp4" class="figure-img img-fluid rounded">
-      </video>
-      <p>
-      <font color="#FF4500"><b>Failure</b></font>: Insert plug
-      </p>
-    </div>
-  </div>
-</div>
 
   </div>
 </section>
@@ -540,10 +592,10 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{goyal2023rvt,
+    <pre><code>@article{goyal2024rvt,
   author    = {Goyal, Ankit and Blukis, Valts and Xu, Jie and Guo, Yijie and Chao, Yu-Wei and Fox, Dieter},
   title     = {RVT2: Learning Precise Manipulation from Few Demonstrations},
-  journal   = {arXiv:tbd},
+  journal   = {RSS},
   year      = {2024},
 }</code></pre>
   </div>
